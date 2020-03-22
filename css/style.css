@@ -1,0 +1,86 @@
+/*    LAYOUT    */
+body,
+header,
+section {
+    width: 100%;
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    background-color: #111;
+}
+
+
+article {
+    position: relative;
+    margin: 0 auto;
+}
+
+/*IMG*/
+
+img {
+    display: block;
+    width: 100%;
+}
+
+/*TYPOGRAPHY*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    font-family: sans-serif;
+    color: white;
+}
+
+
+a {
+    display: block;
+    text-decoration: none;
+    padding: 8px;
+
+}
+
+article h2 {
+    position: absolute;
+    bottom: 0;
+    padding: 32px;
+}
+
+
+/*     Media Queries     */
+
+@media screen and (min-width: 640px) {
+
+    body {
+        background-color: greenyellow;
+    }
+
+    section {
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+        grid-gap: 32px;
+    }
+
+    article {
+        grid
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+  section {
+
+        grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    }
+
+
+}
